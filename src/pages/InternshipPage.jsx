@@ -42,6 +42,7 @@ const InternshipPage = () => {
                 name='user_name'
                 className='input input-bordered'
                 placeholder='John Doe'
+                required
               />
             </label>
             <label className='form-control'>
@@ -54,6 +55,7 @@ const InternshipPage = () => {
                 name="user_email"
                 className='input input-bordered'
                 placeholder='email@example.com'
+                required
               />
             </label>
             <label className='form-control'>
@@ -66,6 +68,7 @@ const InternshipPage = () => {
                 className='input input-bordered h-fit py-3 resize-none'
                 rows={15}
                 placeholder='Introduce yourself here...'
+                required
               />
             </label>
             <label className='form-control'>
@@ -78,6 +81,7 @@ const InternshipPage = () => {
                 name='user_resume'
                 className='input input-bordered'
                 placeholder='https://drive.google.com/file/d/***'
+                required
               />
             </label>
             <div className='justify-self-end'>
