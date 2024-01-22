@@ -22,13 +22,15 @@ const InternshipPage = () => {
         title: 'Sent Email Failed',
         icon: 'error'
       })
+
+      console.error(error)
     });
   }
 
 
   return (
     <div className='grid place-items-center'>
-      <div className='w-1/2 py-8'>
+      <div className='w-1/2 py-8 max-sm:w-full max-sm:px-2'>
         <h1 className='uppercase text-2xl text-center'>We are <span className='text-primary font-bold'>Hiring</span><br />Internship Students</h1>
         <div>
           <form ref={form} onSubmit={sendEmail} className='grid grid-cols-1 w-full space-y-4'>
