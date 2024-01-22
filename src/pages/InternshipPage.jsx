@@ -11,7 +11,7 @@ const InternshipPage = () => {
     emailjs.sendForm('service_wukuanq', 'template_zof2q8l', form.current, 'MgTzToHw18e54SFSM')
     .then((result) => {
         Swal.fire({
-          title: 'Sent Email Succussfully',
+          title: 'Sent Email Successfully',
           icon: 'success'
         }).then(res => {
           window.location.reload();
@@ -19,8 +19,8 @@ const InternshipPage = () => {
 
     }, (error) => {
       Swal.fire({
-        title: 'Sent Email Succussfully',
-        icon: 'success'
+        title: 'Sent Email Failed',
+        icon: 'error'
       })
     });
   }
